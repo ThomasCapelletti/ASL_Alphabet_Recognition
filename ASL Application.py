@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb  5 14:27:32 2025
-
-@author: claud
-"""
-
 import os
 import sys
 import cv2

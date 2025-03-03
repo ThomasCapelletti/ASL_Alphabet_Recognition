@@ -104,8 +104,3 @@ I chose not to upload datasets for several reasons:
 - **Enhance tracking robustness under varying lighting conditions.**  
 - **Optimize the model for mobile and web applications.**  
 
-## 💡 Acknowledgments  
-- **Kaggle ASL Dataset**  
-- **Google MediaPipe**  
-- **TensorFlow/Keras Community**  
-

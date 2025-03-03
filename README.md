@@ -13,36 +13,40 @@ This project aims to recognize letters of the American Sign Language (ASL) alpha
 ## 📁 Repository Structure  
 Since GitHub has storage limitations, only essential files have been uploaded. Datasets and large training files are not included, but each model can generate a `.keras` file that can be used with the ASL Application.py interface.  
 
-```
-ASL - Final Model  
-├── ASL Application.py  (User interface for real-time recognition)  
-├── alphabet tracking.ipynb  (Notebook for tracking analysis)  
-├── asl_model_fine.keras  (Pre-trained final model)  
+🔹 ASL - Final Model
+This folder contains the final and most effective model, which is already trained and ready for use:
 
-CNN - First Model  
-├── Demo.ipynb (Initial CNN classification test using Kaggle dataset)  
-├── asl-classification-using-cnn - V1.ipynb (Improved version with parameter tuning)  
+ASL Application.py – The user interface for real-time ASL recognition.
+alphabet tracking.ipynb – Jupyter notebook for tracking analysis and visualization.
+asl_model_fine.keras – The pre-trained final model that achieves the best accuracy.
+🔹 CNN - First Model
+The first experimental CNN model trained on a public dataset:
 
-CNN with Fixed Background  
-├── asl_classification_our_hands.ipynb (Training on a custom dataset with a fixed background to reduce overfitting. This model was tested only on 5 letters to verify its effectiveness)  
+Demo.ipynb – Initial CNN classification test using the Kaggle ASL dataset.
+asl-classification-using-cnn - V1.ipynb – Improved version with parameter tuning.
+🔹 CNN with Fixed Background
+A model trained on a custom dataset with a fixed background to reduce overfitting:
 
-Moving Around (CNN with Variable Background)  
-├── testing while moving around.ipynb (Training with a dataset acquired while moving to improve generalization. This model was also initially tested only on 5 letters)  
+asl_classification_our_hands.ipynb – This model was initially tested on only 5 letters to verify its effectiveness before full-scale training.
+🔹 Moving Around (CNN with Variable Background)
+A dataset was created while moving to test generalization capabilities:
 
-Tracking Training (Hand Tracking + CNN)  
-├── CNN tracking in training.ipynb (Experiment with CNN and selection of best images through hand tracking)  
-├── tracking only weights.ipynb (Training based exclusively on hand coordinates instead of images)  
+testing while moving around.ipynb – Training with images captured in varying environments. Initially tested on 5 letters before full training.
+🔹 Tracking Training (Hand Tracking + CNN)
+Experiments integrating MediaPipe hand tracking into CNN models:
 
-Useful Tools (Data Processing Scripts)  
-├── data creator from video frames.py  (Extracting frames from videos)  
-├── npy creator from folders.py  (Converting folders into .npy files)  
-├── video flipper.py  (Flipping videos)  
-├── video merger.py  (Merging videos)  
+CNN tracking in training.ipynb – A CNN-based approach where only frames with clear hand visibility were selected.
+tracking only weights.ipynb – A model trained exclusively on hand landmark coordinates instead of full images.
+🔹 Useful Tools (Data Processing Scripts)
+Scripts developed to assist with dataset creation and preprocessing:
 
-ASL - AI Report.pdf  (Complete project report)  
-
-ASL Application.py (Also available in the repository's homepage for ease of use with any .keras file obtained from the tested models)  
-```
+data creator from video frames.py – Extracts frames from recorded videos to create datasets.
+npy creator from folders.py – Converts folders of images into .npy files for efficient training.
+video flipper.py – Flips videos horizontally to augment the dataset.
+video merger.py – Merges multiple videos into a single file for dataset consistency.
+🔹 Additional Files
+ASL - AI Report.pdf – The complete project report detailing methodology, experiments, and results.
+ASL Application.py – Also placed in the repository's root directory to facilitate usage with any .keras model obtained from the tested approaches.
 
 ## 🔧 Installation & Setup  
 ### 1️⃣ Clone the repository  
